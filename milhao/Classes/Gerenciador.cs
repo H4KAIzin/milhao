@@ -1,23 +1,23 @@
 namespace milhao;
 public class Gerenciador
 {
- List <Questao> listaQuestoes = new List <Questao> ();
+ List <Questao> listaQuestoes = new List <Questao();
  List <int> ListaQuestoesRespondidas = new List <int>  ();
  Questao questao_Corrente;
  
-    void createQuestion(Labelpergunta, Button1, Button2, Button3, Button4, Button5,)
+    void createQuestion(labelpergunta, BuResp1, BuResp2, BuResp3, BuResp4, BuResp5,)
  public Gerenciador(Label labelPergunta, Button Button1, Button Button2, 
  Button Button3, Button Button4, Button Button5 );
  {
-    var q1 = new Questao();
-    q1.pergunta = "Quanto é 2+2?";
-    q1.resposta01 = "1";
-    q1.resposta02 = "2";
-    q1.resposta03 = "13";
-    q1.resposta04 = "22";
-    q1.resposta05 = "4";
-    q1.RespostaCorreta = 5;
-    q1.ConfigurarDesenho(LabelPergunta, Button1, Button2, Button3, Button4, button5)
+    var q1 = new Quest();
+    q1.pergunta = "Quanto é 2+2?"
+    q1.resposta01 = "1"
+    q1.resposta02 = "2"    
+    q1.resposta03 = "13"
+    q1.resposta04 = "22"
+    q1.resposta05 = "4"
+    q1.RespostaCorreta = 5
+    q1.ConfigurarDesenho(LabelPergunta, BuResp1, BuResp2, BuResp3, BuResp4, buResp5)
  }
     public void NextQuestion()
     {

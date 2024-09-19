@@ -2,33 +2,68 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="milhao.PlayPage"
-             BackgroundColor="White">
+             BackgroundColor="Green">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-        </Grid.RowDefinitions>
-
-        <Frame>
-                <Label>
-                </Label>
         
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+       
+            <Label Text="PERGUNTA"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
         
+
         
+            <Label Text="OPÇÃO1"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
+      
+
+       
+            <Label Text="OPÇÃO2"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
+       
+
+       
+            <Label Text="OPÇÃO3"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
+      
+
+       
+            <Label Text="OPÇÃO4"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
         
-        
-        
-        <Frame/>
 
-
-
-
-
-
-
+      
+            <Label Text="OPÇÃO5"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center" />
+     
+        <Grid/>
 </ContentPage>
