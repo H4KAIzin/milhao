@@ -5,65 +5,73 @@
              BackgroundColor="Green">
 
         
-            <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="70"/>
-            </Grid.RowDefinitions>
-       
-            <Label Text="PERGUNTA"
-                   FontSize="24"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-        
+      <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-        
-            <Label Text="OPÇÃO1"
-                   FontSize="18"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-      
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-       
-            <Label Text="OPÇÃO2"
-                   FontSize="18"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-       
+        <!-- Pergunta -->
+        <Label x:Name="labelpergunta"
+               BackgroundColor="#00FF7F"
+               Text="pergunta"
+               TextColor="Black"
+               FontSize="14"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
 
-       
-            <Label Text="OPÇÃO3"
-                   FontSize="18"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-      
+        <!-- Botões de resposta -->
+        <Button x:Name="Button1"
+                BackgroundColor="#32CD32"
+                FontSize="12"
+                Text="Opção 1"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3" />
 
-       
-            <Label Text="OPÇÃO4"
-                   FontSize="18"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-        
+        <Button x:Name="Button2"
+                BackgroundColor="#32CD32"
+                FontSize="12"
+                Text="Opção 2"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3" />
 
-      
-            <Label Text="OPÇÃO5"
-                   FontSize="18"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center" />
-     
-        <Grid/>
+        <Button x:Name="Button3"
+                BackgroundColor="#32CD32"
+                FontSize="12"
+                Text="Opção 3"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3" />
+
+        <Button x:Name="Button4"
+                BackgroundColor="#32CD32"
+                FontSize="12"
+                Text="Opção 4"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="3" />
+
+        <Button x:Name="Button5"
+                BackgroundColor="#32CD32"
+                FontSize="12"
+                Text="Opção 5"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3" />
+    </Grid>
 </ContentPage>
