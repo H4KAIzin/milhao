@@ -75,16 +75,16 @@ public class Questao
     public bool VerificaResposta(int rr){
         if(CorrectAnswer == rr){
             var button = QualButton(rr);
-            button.BackgroundColor = Colors.Green; //"#a1c9ae";
+            button.BackgroundColor = Colors.Green;
             return true;
         }
         else{
             var buttonCorreto = QualButton(CorrectAnswer);
             var buttonIncorreto = QualButton(rr);
-            buttonCorreto.BackgroundColor = Colors.Green; //"#a1c9ae";
-            buttonIncorreto.BackgroundColor = Colors.Red; //#e88e8e;
+            buttonCorreto.BackgroundColor = Colors.Green;
+            buttonIncorreto.BackgroundColor = Colors.Red;
 
             return false;
         }
     }
-    }
+}
