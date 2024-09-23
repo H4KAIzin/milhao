@@ -1,6 +1,6 @@
 namespace milhao;
 
-public partial class PlayPage : ContentPage
+public partial class PlayPage
 {
 	 Gerenciador gerenciador;
 	public PlayPage()
@@ -11,30 +11,27 @@ public partial class PlayPage : ContentPage
         gerenciador.ProximaQuestao();
 	}
 
-
-
-
-	public void Click1(object sender, EventArgs e)
+	void Click1(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaCorreto(1);
+	 gerenciador.VerificaResposta(1);
 	}
 
-	public void Click2(object sender, EventArgs e)
+	void Click2(object sender, EventArgs e)
 	{
 	 gerenciador.VerificaResposta(2);
 	}
 
-	public void Click3(object sender, EventArgs e)
+	void Click3(object sender, EventArgs e)
 	{
 	 gerenciador.VerificaResposta(3);
 	}
 
-	public void Click4(object sender, EventArgs e)
+	void Click4(object sender, EventArgs e)
 	{
 	 gerenciador.VerificaResposta(4);
 	}
 
-	public void Click5(object sender, EventArgs e)
+	void Click5(object sender, EventArgs e)
 	{
 	 gerenciador.VerificaResposta(5);
 	}
