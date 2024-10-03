@@ -1115,7 +1115,7 @@ public class Gerenciador
         questaoAtual.Desenhar();
     }
 
-    async void VerificaCorreto(int resposta)
+    public async void VerificaCorreto(int resposta)
     {
         if (questaoAtual.VerificaResposta(resposta))
         {

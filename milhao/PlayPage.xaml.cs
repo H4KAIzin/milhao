@@ -2,7 +2,7 @@ namespace milhao;
 
 public partial class PlayPage
 {
-	 Gerenciador gerenciador;
+	Gerenciador gerenciador;
 	public PlayPage()
 	{
 		InitializeComponent();
@@ -13,27 +13,27 @@ public partial class PlayPage
 
 	void Click1(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaResposta(1);
+	 gerenciador.VerificaCorreto(1);
 	}
 
 	void Click2(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaResposta(2);
+	 gerenciador.VerificaCorreto(2);
 	}
 
 	void Click3(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaResposta(3);
+	 gerenciador.VerificaCorreto(3);
 	}
 
 	void Click4(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaResposta(4);
+	 gerenciador.VerificaCorreto(4);
 	}
 
 	void Click5(object sender, EventArgs e)
 	{
-	 gerenciador.VerificaResposta(5);
+	 gerenciador.VerificaCorreto(5);
 	}
 
 }

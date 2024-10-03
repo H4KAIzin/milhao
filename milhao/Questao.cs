@@ -27,9 +27,9 @@ public class Questao
 
      public Questao(){
         
-    }
+     }
 
-     public void ConfiguraEstruturaDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    public void ConfiguraEstruturaDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
         {
            
             Labelpergunta = labelpergunta;
@@ -41,7 +41,7 @@ public class Questao
         }
 
         
-        public void Desenhar()
+    public void Desenhar()
         {
             
             Labelpergunta.Text = Question;
@@ -74,15 +74,15 @@ public class Questao
 
     public bool VerificaResposta(int rr){
         if(CorrectAnswer == rr){
-            var button = QualButton(rr);
-            button.BackgroundColor = Colors.Green;
-            return true;
+    var button = QualButton(rr);
+        button.BackgroundColor = Colors.Green;
+    return true;
         }
         else{
             var buttonCorreto = QualButton(CorrectAnswer);
-            var buttonIncorreto = QualButton(rr);
+                var buttonIncorreto = QualButton(rr);
             buttonCorreto.BackgroundColor = Colors.Green;
-            buttonIncorreto.BackgroundColor = Colors.Red;
+                buttonIncorreto.BackgroundColor = Colors.Red;
 
             return false;
         }
