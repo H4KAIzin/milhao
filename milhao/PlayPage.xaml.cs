@@ -36,4 +36,19 @@ public partial class PlayPage
 	 gerenciador.VerificaCorreto(5);
 	}
 
+
+
+	void OnAjudaPulaClicked(object s, EventArgs e)
+    {
+        gerenciador.ProximaQuestao();
+        (s as Button).IsVisible = false;
+    }
+
+    void OnAjudaRetirarCliecked(object s, EventArgs e)
+    {
+        var ajuda = new RetiraErrada();
+        ajuda.ConfiguraEstruturaDesenho(Button1, Button2, Button3, Button4, Button5);
+        ajuda.RealizaAjuda(gerenciador.QuestaoAtual());
+        (s as Button).IsVisible = false;
+    }
 }

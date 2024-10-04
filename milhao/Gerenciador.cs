@@ -1123,4 +1123,6 @@ public class Gerenciador
             ProximaQuestao();
         }
     }
+
+    
 }
