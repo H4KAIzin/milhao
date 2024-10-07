@@ -24,6 +24,28 @@
         </Grid.ColumnDefinitions>
 
         
+
+
+         <Label Text="Nível: 1"
+                TextColor="White"
+                FontSize="16"
+                FontFamily="StalystaPersonal"
+                Margin="10, 2, 10, 15"
+                x:Name="labelPontuacao"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"/>
+
+        <Label Text="Pontuação: 0"
+                TextColor="White"
+                FontSize="16"
+                FontFamily="StalystaPersonal"
+                Margin="10,2, 10, 15"
+                x:Name="labelNivel"
+                Grid.Row="1"
+                Grid.Column="2"/>
+
+
         <Label x:Name="labelpergunta"
                BackgroundColor="#00FF7F"
                TextColor="Black"
@@ -79,6 +101,34 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 BorderWidth="7" />
+
+                
+
+
+                <Frame IsVisible="false"
+                               x:Name="frameGameOver"
+                               Grid.RowSpan="10"
+                               Grid.ColumnSpan="3"
+                               Margin="20"
+                               Padding="0"
+                               BackgroundColor="Black">
+                                <VerticalStackLayout>
+                                        <Label Text="You Lost!"
+                                               TextColor="White"
+                                               HorizontalTextAlignment="Center"
+                                               Margin="20"
+                                               FontSize="50"
+                                               Grid.Row="1"/>
+
+                                        <Button Text="RECOMEÇAR"
+                                                Clicked="BotaoRecomecar"
+                                                TextColor="White"
+                                                BackgroundColor="Black"
+                                                BorderColor="White"
+                                                BorderWidth="1"
+                                                Grid.Row="3"/>
+                                </VerticalStackLayout>
+                        </Frame>
 
                 
     </Grid>

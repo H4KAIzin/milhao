@@ -10,6 +10,25 @@ public class Gerenciador
         CriarQuestoes(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
     }
     
+    public int Pontuacao { get; private set; }
+
+    Label labelPontuacao;
+    Label labelNivel;
+    int NivelResposta = 1;
+    Frame FrameGameOver;
+
+    public void Initialize()
+    {
+        Pontuacao = 0;
+        NivelResposta = 1;
+        ProximaQuestao();
+        FrameGameOver.IsVisible = false;
+    }
+
+    public Questao GetQuestaoAtual()
+    {
+        return questaoAtual;
+    }
     void CriarQuestoes(Label labelPergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
     {
         var q1 = new Questao();
@@ -1101,6 +1120,17 @@ public class Gerenciador
         q99.CorrectAnswer = 1;
         q99.ConfiguraEstruturaDesenho(labelPergunta, button1, button2, button3, button4, button5);
         listaQuestoes.Add(q99);
+
+        var q100 = new Questao();
+        q100.Question = "Qual o tamanho do lendário cajado do programador deste app?";
+        q100.Answer01 = "56km";
+        q100.Answer02 = "46km";
+        q100.Answer03 = "38cm";
+        q100.Answer04 = "1m";
+        q100.Answer05 = "2m";
+        q100.CorrectAnswer = 1;
+        q100.ConfiguraEstruturaDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        listaQuestoes.Add(q100);
     }
 
     public void ProximaQuestao(){
